@@ -1,0 +1,97 @@
+Detecting compiler hash for triplet arm64-osx...
+Compiler found: /usr/bin/c++
+The following packages will be built and installed:
+  * bzip2[core,tool]:arm64-osx@1.0.8#6
+    elfio:arm64-osx@3.12#1
+    libarchive[bzip2,core,crypto,lz4,lzma,xar,zstd]:arm64-osx@3.8.5
+  * libiconv:arm64-osx@1.18#3
+  * liblzma:arm64-osx@5.8.2#1
+  * libxml2[core,iconv,zlib]:arm64-osx@2.15.1
+    lz4:arm64-osx@1.10.0
+  * mbedtls:arm64-osx@3.6.4
+    quickjs-ng:arm64-osx@0.12.1
+  * vcpkg-cmake:arm64-osx@2024-04-23
+  * vcpkg-cmake-config:arm64-osx@2024-05-23
+  * zlib:arm64-osx@1.3.1
+  * zstd:arm64-osx@1.5.7
+Additional packages (*) will be modified to complete this operation.
+Restored 13 package(s) from /Users/neemaxon/.cache/vcpkg/archives in 61.7 ms. Use --debug to see more details.
+Installing 1/13 vcpkg-cmake-config:arm64-osx@2024-05-23...
+Elapsed time to handle vcpkg-cmake-config:arm64-osx: 1.33 ms
+vcpkg-cmake-config:arm64-osx package ABI: 5e5e5e184dbc7f510559b3ce05bdbfdbfded99c3c03a8431e73a10ca66efa794
+Installing 2/13 vcpkg-cmake:arm64-osx@2024-04-23...
+Elapsed time to handle vcpkg-cmake:arm64-osx: 1.5 ms
+vcpkg-cmake:arm64-osx package ABI: 37167168d0689e146244b42525340f697fbda1c3582246fe1cdde38d42c23da9
+Installing 3/13 elfio:arm64-osx@3.12#1...
+Elapsed time to handle elfio:arm64-osx: 4.14 ms
+elfio:arm64-osx package ABI: 25006fe4b2b53cfba6c44a3d572d9d55c50883f86da6dd804106968c18a94975
+Installing 4/13 zstd:arm64-osx@1.5.7...
+Elapsed time to handle zstd:arm64-osx: 3.09 ms
+zstd:arm64-osx package ABI: 058050332e31af13d62c6cc047997e86823580f81459344393c1edc4819d3faf
+Installing 5/13 zlib:arm64-osx@1.3.1...
+Elapsed time to handle zlib:arm64-osx: 2.42 ms
+zlib:arm64-osx package ABI: 7fd27bbf7583af787beab5f39580bb428345ab3425dd9c9b0d96a719cea9fc44
+Installing 6/13 libiconv:arm64-osx@1.18#3...
+Elapsed time to handle libiconv:arm64-osx: 1.02 ms
+libiconv:arm64-osx package ABI: 432ecf70696a2340520c1c2e18b8861c7e68110766f1ec4d9a00aa281800932f
+Installing 7/13 libxml2[core,iconv,zlib]:arm64-osx@2.15.1...
+Elapsed time to handle libxml2:arm64-osx: 10.5 ms
+libxml2:arm64-osx package ABI: a35e3100f17858b49524f95c8eb3580bf34653fd5aadcd5fec8b18e223a604a9
+Installing 8/13 liblzma:arm64-osx@5.8.2#1...
+Elapsed time to handle liblzma:arm64-osx: 7.62 ms
+liblzma:arm64-osx package ABI: 51f0fe951b6d6aa5b7c0f10e303dc0a45fbdaef50356a3f1dec20b571f584948
+Installing 9/13 lz4:arm64-osx@1.10.0...
+Elapsed time to handle lz4:arm64-osx: 3.49 ms
+lz4:arm64-osx package ABI: 66b1663a3b3d56bebe14a21da1d3aeee796acfea3cd02db61420691234651750
+Installing 10/13 mbedtls:arm64-osx@3.6.4...
+Elapsed time to handle mbedtls:arm64-osx: 23.4 ms
+mbedtls:arm64-osx package ABI: 2e84c4911bb557fb6282c9e1e71f7b99e34d4fb909caae24996b3067dbddce7b
+Installing 11/13 bzip2[core,tool]:arm64-osx@1.0.8#6...
+Elapsed time to handle bzip2:arm64-osx: 2.55 ms
+bzip2:arm64-osx package ABI: 2506a7c0ed0c38e73583e569c02600a2e3325076e56a63953a16d0808414b05d
+Installing 12/13 libarchive[bzip2,core,crypto,lz4,lzma,xar,zstd]:arm64-osx@3.8.5...
+Elapsed time to handle libarchive:arm64-osx: 3.27 ms
+libarchive:arm64-osx package ABI: a195daa0406878568c70ed78e6040b5513d7a0f6c767d53dad27ee20e8c2ddf3
+Installing 13/13 quickjs-ng:arm64-osx@0.12.1...
+Elapsed time to handle quickjs-ng:arm64-osx: 4.99 ms
+quickjs-ng:arm64-osx package ABI: a3402864ff205219077ff2fe66c199a72f11650df6ed3c93c20c378b92c513c0
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
+Packages installed in this vcpkg installation declare the following licenses:
+(Apache-2.0 OR GPL-2.0-or-later)
+(BSD-3-Clause OR GPL-2.0-only)
+BSD-2-Clause
+MIT
+Zlib
+bzip2-1.0.6
+elfio provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(elfio CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE elfio::elfio)
+
+lz4 provides CMake targets:
+
+  find_package(lz4 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE lz4::lz4)
+
+lz4 provides pkg-config modules:
+
+  liblz4
+
+libarchive is compatible with the CMake Find Module:
+
+  find_package(LibArchive REQUIRED)
+  target_link_libraries(main PRIVATE LibArchive::LibArchive) # since CMake 3.17
+
+libarchive provides pkg-config modules:
+
+  # library that can create and read several streaming archive formats
+  libarchive
+
+quickjs-ng provides CMake targets:
+
+  find_package(qjs CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE qjs)
+
+All requested installations completed successfully in: 71.5 ms

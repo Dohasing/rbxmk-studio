@@ -1,0 +1,15 @@
+# ninja log v7
+2	9	1772281235088377217	rbxmk-studio.app/Contents/Resources/rbxcloud	1dd702a547ba53e
+2	10	1772281235088051635	rbxmk-studio.app/Contents/Resources/icon.icns	c3a11060cc8c42c
+2	10	1772281235088542134	rbxmk-studio.app/Contents/Resources/lune	b81648ba9d7fa9b8
+3	11	1772281235089403756	rbxmk-studio.app/Contents/Resources/anim2rbx	43d132386320c049
+2	11	1772281235088945257	rbxmk-studio.app/Contents/Resources/ludock	49c5cf1237b53b8a
+2	11	1772281235088253343	rbxmk-studio.app/Contents/Resources/rbxmk	cc046ddd963d49de
+3	41	1772281235122359204	rbxmk-studio_autogen/timestamp	24a876c2077140a6
+3	41	1772281235122359204	rbxmk-studio_autogen/mocs_compilation.cpp	24a876c2077140a6
+3	41	1772281235122359204	/Users/neemaxon/Documents/rbxmk-studio/build/rbxmk-studio_autogen/timestamp	24a876c2077140a6
+3	41	1772281235122359204	/Users/neemaxon/Documents/rbxmk-studio/build/rbxmk-studio_autogen/mocs_compilation.cpp	24a876c2077140a6
+42	67	1772281235128424437	CMakeFiles/rbxmk-studio.dir/rbxmk-studio_autogen/mocs_compilation.cpp.o	fbb7d05164fb04c5
+42	265	1772281235128767103	CMakeFiles/rbxmk-studio.dir/Application/core/sources/modules/interface.cpp.o	c72876acabdf354a
+42	267	1772281235128882519	CMakeFiles/rbxmk-studio.dir/Application/core/sources/modules/phases.cpp.o	bd622ef340960079
+43	611	1772281235128986894	CMakeFiles/rbxmk-studio.dir/Application/interface/widgets/widget.cpp.o	f882f458f3f1dcdc

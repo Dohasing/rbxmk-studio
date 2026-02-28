@@ -1,0 +1,303 @@
+cmake_minimum_required(VERSION 3.20)
+
+set(VCPKG_APPLOCAL_DEPS ON)
+set(VCPKG_APPLOCAL_DEPS_INSTALL ON)
+set(CMAKE_MACOSX_RPATH ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
+
+set(PLATFORM "" CACHE STRING "Target platform: windows or macos or linux")
+set_property(CACHE PLATFORM PROPERTY STRINGS windows macos linux)
+
+if(PLATFORM STREQUAL "")
+    message(FATAL_ERROR "PLATFORM is not set. Use -DPLATFORM=windows or macos or linux")
+endif()
+
+if(PLATFORM STREQUAL "macos")
+    project(rbxmk-studio LANGUAGES CXX OBJCXX)
+else()
+    project(rbxmk-studio LANGUAGES CXX)
+endif()
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(elfio CONFIG REQUIRED)
+find_package(LibArchive REQUIRED)
+find_package(qjs CONFIG REQUIRED)
+find_package(lz4 CONFIG REQUIRED)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
+set(FILAMENT_BASE "${CMAKE_SOURCE_DIR}/assets/filament-platform")
+
+if(PLATFORM STREQUAL "macos")
+    set(FILAMENT_ROOT "${FILAMENT_BASE}/macOS/filament")
+elseif(PLATFORM STREQUAL "windows")
+    set(FILAMENT_ROOT "${FILAMENT_BASE}/win32/filament")
+elseif(PLATFORM STREQUAL "linux")
+    set(FILAMENT_ROOT "${FILAMENT_BASE}/linux/filament")
+else()
+    message(FATAL_ERROR "Unknown PLATFORM='${PLATFORM}'. Use windows or macos or linux")
+endif()
+
+set(FILAMENT_INCLUDE_DIR "${FILAMENT_ROOT}/include")
+set(FILAMENT_BIN_DIR     "${FILAMENT_ROOT}/bin")
+
+if(PLATFORM STREQUAL "macos")
+    set(FILAMENT_LIB_DIR "${FILAMENT_ROOT}/lib/arm64")
+
+elseif(PLATFORM STREQUAL "linux")
+    set(FILAMENT_LIB_DIR "${FILAMENT_ROOT}/lib/x86_64")
+
+elseif(PLATFORM STREQUAL "windows")
+    set(FILAMENT_LIB_DIR_RELEASE "${FILAMENT_ROOT}/lib/x86_64/md")
+    set(FILAMENT_LIB_DIR_DEBUG   "${FILAMENT_ROOT}/lib/x86_64/mdd")
+endif()
+
+if(NOT EXISTS "${FILAMENT_INCLUDE_DIR}")
+    message(FATAL_ERROR "Filament include dir not found: ${FILAMENT_INCLUDE_DIR}")
+endif()
+
+if(PLATFORM STREQUAL "windows")
+    if(NOT EXISTS "${FILAMENT_LIB_DIR_RELEASE}")
+        message(FATAL_ERROR "Filament lib dir (Release) not found: ${FILAMENT_LIB_DIR_RELEASE}")
+    endif()
+    if(NOT EXISTS "${FILAMENT_LIB_DIR_DEBUG}")
+        message(FATAL_ERROR "Filament lib dir (Debug) not found: ${FILAMENT_LIB_DIR_DEBUG}")
+    endif()
+else()
+    if(NOT EXISTS "${FILAMENT_LIB_DIR}")
+        message(FATAL_ERROR "Filament lib dir not found: ${FILAMENT_LIB_DIR}")
+    endif()
+endif()
+
+set(FILAMENT_IMPORTED_TARGETS "")
+
+if(PLATFORM STREQUAL "windows")
+    file(GLOB FILAMENT_LIB_FILES_RELEASE "${FILAMENT_LIB_DIR_RELEASE}/*.lib")
+    file(GLOB FILAMENT_LIB_FILES_DEBUG   "${FILAMENT_LIB_DIR_DEBUG}/*.lib")
+
+    if(FILAMENT_LIB_FILES_RELEASE STREQUAL "" OR FILAMENT_LIB_FILES_DEBUG STREQUAL "")
+        message(FATAL_ERROR "No Filament .lib found in md/mdd folders.")
+    endif()
+
+    set(_filament_names "")
+    foreach(libfile IN LISTS FILAMENT_LIB_FILES_RELEASE)
+        get_filename_component(fname "${libfile}" NAME_WE)
+        list(APPEND _filament_names "${fname}")
+    endforeach()
+    list(REMOVE_DUPLICATES _filament_names)
+
+    message(STATUS "Filament libs found (Windows):")
+    foreach(name IN LISTS _filament_names)
+        message(STATUS "  ${name}.lib")
+
+        set(tgt "filament_${name}")
+
+        add_library(${tgt} STATIC IMPORTED GLOBAL)
+        set_target_properties(${tgt} PROPERTIES
+                IMPORTED_LOCATION_RELEASE "${FILAMENT_LIB_DIR_RELEASE}/${name}.lib"
+                IMPORTED_LOCATION_RELWITHDEBINFO "${FILAMENT_LIB_DIR_RELEASE}/${name}.lib"
+                IMPORTED_LOCATION_MINSIZEREL "${FILAMENT_LIB_DIR_RELEASE}/${name}.lib"
+                IMPORTED_LOCATION_DEBUG "${FILAMENT_LIB_DIR_DEBUG}/${name}.lib"
+        )
+
+        list(APPEND FILAMENT_IMPORTED_TARGETS ${tgt})
+    endforeach()
+
+else()
+    file(GLOB FILAMENT_LIB_FILES "${FILAMENT_LIB_DIR}/*.a")
+
+    if(FILAMENT_LIB_FILES STREQUAL "")
+        message(FATAL_ERROR "No Filament libs found in: ${FILAMENT_LIB_DIR}")
+    endif()
+
+    message(STATUS "Filament libs found:")
+    foreach(libfile IN LISTS FILAMENT_LIB_FILES)
+        message(STATUS "  ${libfile}")
+    endforeach()
+
+    foreach(libfile IN LISTS FILAMENT_LIB_FILES)
+        get_filename_component(fname "${libfile}" NAME_WE)
+        string(REGEX REPLACE "^lib" "" fname "${fname}")
+        string(REPLACE "-" "_" safe "${fname}")
+
+        set(tgt "filament_${safe}")
+
+        add_library(${tgt} STATIC IMPORTED GLOBAL)
+        set_target_properties(${tgt} PROPERTIES
+                IMPORTED_LOCATION "${libfile}"
+        )
+
+        list(APPEND FILAMENT_IMPORTED_TARGETS ${tgt})
+    endforeach()
+endif()
+
+add_library(filament_all INTERFACE)
+target_include_directories(filament_all INTERFACE "${FILAMENT_INCLUDE_DIR}")
+target_link_libraries(filament_all INTERFACE ${FILAMENT_IMPORTED_TARGETS})
+
+set(APP_NAME "rbxmk-studio")
+
+if(PLATFORM STREQUAL "macos")
+    message(STATUS "Configuring for macOS bundle")
+
+    set(SOURCES
+            Application/core/sources/boot.cpp
+            Application/core/sources/modules/interface.cpp
+            Application/core/sources/modules/phases.cpp
+            Application/interface/widgets/widget.cpp
+            Application/core/packages/file/file.cpp
+            Application/core/packages/file/binary/BinaryFormat.cpp
+            Application/core/packages/luautypes/luautypes.cpp
+    )
+
+    set(MACOS_ICON "${CMAKE_SOURCE_DIR}/assets/macos/icon.icns")
+    set(MACOSX_BUNDLE_ICON_FILE "icon.icns")
+
+    set_source_files_properties(${MACOS_ICON} PROPERTIES
+            MACOSX_PACKAGE_LOCATION "Resources"
+    )
+
+    add_executable(${APP_NAME} MACOSX_BUNDLE
+            ${SOURCES}
+            ${MACOS_ICON}
+    )
+
+    target_link_libraries(${APP_NAME} PRIVATE
+            filament_all
+            "-framework Cocoa"
+            "-framework Metal"
+            "-framework QuartzCore"
+            "-framework CoreVideo"
+            elfio::elfio
+            LibArchive::LibArchive
+            qjs
+            lz4::lz4
+            Qt6::Widgets
+    )
+
+    add_custom_command(TARGET ${APP_NAME} POST_BUILD
+            COMMAND chmod +x "$<TARGET_BUNDLE_CONTENT_DIR:${APP_NAME}>/Resources/rbxmk"
+    )
+    add_custom_command(TARGET ${APP_NAME} POST_BUILD
+            COMMAND chmod +x "$<TARGET_BUNDLE_CONTENT_DIR:${APP_NAME}>/Resources/rbxcloud"
+    )
+    add_custom_command(TARGET ${APP_NAME} POST_BUILD
+            COMMAND chmod +x "$<TARGET_BUNDLE_CONTENT_DIR:${APP_NAME}>/Resources/lune"
+    )
+    add_custom_command(TARGET ${APP_NAME} POST_BUILD
+            COMMAND chmod +x "$<TARGET_BUNDLE_CONTENT_DIR:${APP_NAME}>/Resources/ludock"
+    )
+    add_custom_command(TARGET ${APP_NAME} POST_BUILD
+            COMMAND chmod +x "$<TARGET_BUNDLE_CONTENT_DIR:${APP_NAME}>/Resources/anim2rbx"
+    )
+
+    file(GLOB LUA_SCRIPTS
+            ${CMAKE_SOURCE_DIR}/Application/core/packages/scripts/luau/*.luau
+    )
+
+    file(COPY ${LUA_SCRIPTS}
+            DESTINATION ${CMAKE_BINARY_DIR}/scripts/luau
+    )
+
+
+    install(TARGETS ${APP_NAME}
+            BUNDLE DESTINATION .
+    )
+
+elseif(PLATFORM STREQUAL "windows")
+    message(STATUS "Configuring for Windows executable")
+
+    set(SOURCES
+            Application/core/sources/boot.cpp
+            Application/core/sources/modules/interface.cpp
+            Application/core/sources/modules/phases.cpp
+            Application/interface/widgets/widget.cpp
+            Application/core/packages/file/file.cpp
+            Application/core/packages/file/binary/BinaryFormat.cpp
+            Application/core/packages/luautypes/luautypes.cpp
+    )
+
+    set(LUNE_BIN "${CMAKE_SOURCE_DIR}/StableFrameworks/platform-lune/windows/lune.exe")
+    set(WIN_ICON_RC "${CMAKE_SOURCE_DIR}/assets/windows/app.rc")
+
+    add_executable(${APP_NAME} WIN32
+            ${SOURCES}
+            ${WIN_ICON_RC}
+    )
+
+    add_custom_command(TARGET ${APP_NAME} POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${RBXFILES_DIR}"
+            "$<TARGET_BUNDLE_CONTENT_DIR:${APP_NAME}>/Resources/Roblox-File-Format"
+    )
+
+    file(GLOB LUA_SCRIPTS
+            ${CMAKE_SOURCE_DIR}/Application/core/packages/scripts/luau/*.luau
+    )
+
+    file(COPY ${LUA_SCRIPTS}
+            DESTINATION ${CMAKE_BINARY_DIR}/scripts/luau
+    )
+
+    target_link_libraries(${APP_NAME} PRIVATE
+            filament_all
+            opengl32
+            gdi32
+            user32
+            shell32
+            elfio::elfio
+            LibArchive::LibArchive
+            qjs
+            Qt6::Widgets
+            lz4::lz4
+    )
+
+elseif(PLATFORM STREQUAL "linux")
+    message(STATUS "Configuring for Linux build")
+
+    set(SOURCES
+            Application/core/sources/boot.cpp
+            Application/core/sources/modules/interface.cpp
+            Application/core/sources/modules/phases.cpp
+            Application/interface/widgets/widget.cpp
+            Application/core/packages/file/file.cpp
+            Application/core/packages/file/binary/BinaryFormat.cpp
+            Application/core/packages/luautypes/luautypes.cpp
+    )
+
+    add_executable(${APP_NAME}
+            ${SOURCES}
+    )
+
+    target_link_options(${APP_NAME} PRIVATE "-Wl,--start-group")
+
+    target_link_libraries(${APP_NAME} PRIVATE
+            filament_all
+            dl pthread m
+            X11 Xi Xrandr Xcursor
+            GL
+            elfio::elfio
+            LibArchive::LibArchive
+            qjs
+            Qt6::Widgets
+            lz4::lz4
+    )
+
+    file(GLOB LUA_SCRIPTS
+            ${CMAKE_SOURCE_DIR}/Application/core/packages/scripts/luau/*.luau
+    )
+
+    file(COPY ${LUA_SCRIPTS}
+            DESTINATION ${CMAKE_BINARY_DIR}/scripts/luau
+    )
+
+    target_link_options(${APP_NAME} PRIVATE "-Wl,--end-group")
+
+    install(TARGETS ${APP_NAME}
+            RUNTIME DESTINATION usr/bin
+    )
+endif()

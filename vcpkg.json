@@ -1,0 +1,10 @@
+{
+  "name": "rbxmk-studio",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "elfio",
+    "quickjs-ng",
+    "libarchive",
+    "lz4"
+  ]
+}
