@@ -21,7 +21,7 @@ this project will be not just basic Roblox Studio instrument - this project will
 
 this project supports all popular platforms, becouse the project rbxmk-studio builded in CMake and C++. this project will be supports macOS, windows and linux.
 
-# whats plugins & instruments will be support in the rbxmk-studio project from the originakl Roblox Studio ?
+# whats plugins & instruments will be support in the rbxmk-studio project from the original Roblox Studio ?
 
 this the rbxmk-studio project will be support almost all instruments & plugins from the original Roblox Studio, becouse in this project will be supports programme languages such as TypeScript (almost how roblox-ts) and luau (almost how from original roblox studio).
 
