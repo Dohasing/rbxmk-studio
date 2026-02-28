@@ -1,9 +1,0 @@
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/rbxmk-studio.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/edit_cache.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/rebuild_cache.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/list_install_components.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/install.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/install/local.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/install/strip.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/rbxmk-studio_autogen_timestamp_deps.dir
-/Users/neemaxon/Documents/rbxmk-studio/build/CMakeFiles/rbxmk-studio_autogen.dir

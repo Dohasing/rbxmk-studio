@@ -1,4 +1,0 @@
-Cannot generate into /Users/neemaxon/Documents/rbxmk-studio/build
-It was created with incompatible generator 'Ninja'
-
-Please either delete it manually or select another generation directory
