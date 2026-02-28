@@ -8,6 +8,17 @@
   </a>
 </p>
 
-<p align="center">The best alternative to Roblox Studio based on rbxmk and writen in C++.</p>
+<p align="center">The best alternative to Roblox Studio based on CMake and writen in C++.</p>
+
+> [!WARNING]
+>  its a pre-build version of rbxmk-studio project. the base of this project must be soon in 2027. its not a just project, its alternative of Roblox Studio and writen in C++.
+
+# what is motivate me ?
+
+this project will be not just basic Roblox Studio instrument - this project will be the biggest and its can will be parse .rbxl and .rbxlx files from original Roblox Studio.
+
+# what platforms support this project ?
+
+this project supports all popular platforms, becouse the project rbxmk-studio builded in CMake and C++. this project will be supports macOS, windows and linux.
 
 I ❤️ Open Source
