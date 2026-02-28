@@ -15,7 +15,7 @@
 
 # what is motivate me ?
 
-this project will be not just basic Roblox Studio instrument - this project will be the biggest and its can will be parse .rbxl and .rbxlx files from original the Roblox Studio.
+this project will be not just basic Roblox Studio instrument - this project will be the biggest and its can will be parse .rbxl and .rbxlx files from the original Roblox Studio.
 
 # what platforms support this project ?
 
