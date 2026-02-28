@@ -11,7 +11,7 @@
 <p align="center">The best alternative to Roblox Studio based on CMake and writen in C++ programme language.</p>
 
 > [!WARNING]
->  its a pre-build version of the rbxmk-studio project. the base of this project must be soon in 2027. its not a just project, its alternative of the Roblox Studio and writen in C++.
+>  its a pre-build version of the rbxmk-studio project. the base of this project must be soon in 2027. its not a just project, its alternative of the Roblox Studio writen in C++.
 
 # what is motivate me ?
 
