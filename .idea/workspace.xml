@@ -27,207 +27,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bd72daa-2bcd-4874-a4ed-dcc074c85c44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/rbxmk-studio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/packages/file/binary/BinaryFormat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/packages/file/binary/BinaryFormat.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/packages/file/file.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/packages/file/file.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/packages/luautypes/luautypes.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/packages/luautypes/luautypes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/interface/widgets/widget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/interface/widgets/widget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/sources/boot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/sources/boot.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/sources/modules/interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/sources/modules/interface.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/interface/widgets/error/error.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/interface/widgets/error/error.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/interface/widgets/error/error.ui" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/core/file/xml/XmlFormat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/core/file/xml/XmlFormat.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/core/qtclasses/qtclasses.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/core/qtclasses/qtclasses.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/command-line/command-line.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/command-line/command-line.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/logic/logic.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/logic/logic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/luau.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/luau.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/typescript.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/typescript.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/ram/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/ram/main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/ram/optimization/optimization.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/ram/optimization/optimization.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/3d/3d.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/3d/3d.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/3d/sub/file3d.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/3d/sub/file3d.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/cam/cam.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/cam/cam.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/cam/player/playercam.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/cam/player/playercam.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/cam/studio/studiocam.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/cam/studio/studiocam.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/light/light.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/light/light.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/physics/physics.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/render/physics/physics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/binary/BinaryFormat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/binary/BinaryFormat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/binary/BinaryFormat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/binary/BinaryFormat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/file.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/file.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/file.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/file.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/core/packages/luautypes/luautypes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/filamentclasses/filamentclasses.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/core/packages/luautypes/luautypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/filamentclasses/filamentclasses.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/core/packages/scripts/luau/_rbxmkscript-rbxl-parser.luau" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-ludock/macos/ludock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-ludock/windows/ludock.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-lune/linux/lune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-lune/macos/lune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-lune/windows/lune.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-rbxcloud/linux/rbxcloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-rbxcloud/macos/rbxcloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-rbxcloud/windows/rbxcloud.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-rbxmk/linux/rbxmk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-rbxmk/macos/rbxmk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StableFrameworks/platform-rbxmk/windows/rbxmk.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/BundleUtilities.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/BundleUtilities.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCSharpCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCSharpCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCUDACompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCUDACompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestFortranCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestFortranCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestHIPCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestHIPCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestJavaCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestJavaCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestOBJCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestOBJCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestOBJCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestOBJCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestRCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestSwiftCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeTestSwiftCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeVerifyManifest.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CMakeVerifyManifest.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CTestCoverageCollectGCOV.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CTestCoverageCollectGCOV.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CTestUseLaunchers.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CTestUseLaunchers.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCCompilerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCCompilerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCSourceRuns.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCSourceRuns.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCXXSourceRuns.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCXXSourceRuns.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCompilerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckCompilerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckFortranCompilerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckFortranCompilerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckFortranSourceRuns.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckFortranSourceRuns.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckIPOSupported.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckIPOSupported.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckLinkerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckLinkerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCCompilerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCCompilerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCSourceRuns.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCSourceRuns.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCXXCompilerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCXXCompilerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCXXSourceRuns.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckOBJCXXSourceRuns.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckPIESupported.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckPIESupported.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckSourceCompiles.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckSourceCompiles.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckSourceRuns.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckSourceRuns.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckTypeSize.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/CheckTypeSize.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Compiler/MSVC-CXX-FeatureTests.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Compiler/MSVC-CXX-FeatureTests.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Compiler/XL-ASM.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Compiler/XL-ASM.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Compiler/XL-Fortran.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Compiler/XL-Fortran.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/ExternalProject.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/ExternalProject.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/ExternalProject/shared_internal_commands.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/ExternalProject/shared_internal_commands.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FeatureSummary.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FeatureSummary.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FetchContent.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FetchContent.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindBISON.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindBISON.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindBoost.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindBoost.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindCUDA.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindCUDA.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindCUDAToolkit.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindCUDAToolkit.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindCxxTest.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindCxxTest.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindDoxygen.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindDoxygen.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindFLEX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindFLEX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindGTest.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindGTest.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindGettext.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindGettext.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindHDF5.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindHDF5.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindJava.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindJava.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindMPI.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindMPI.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindMatlab.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindMatlab.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindOpenSSL.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindOpenSSL.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindPkgConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindPkgConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindProtobuf.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindProtobuf.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindPython.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindPython.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindQt.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindQt.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindQt4.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindQt4.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindSDL_sound.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindSDL_sound.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindSquish.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindSquish.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindSubversion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindSubversion.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindwxWidgets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FindwxWidgets.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FortranCInterface.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/FortranCInterface.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/GenerateExportHeader.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/GenerateExportHeader.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/GetPrerequisites.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/GetPrerequisites.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/GoogleTestAddTests.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/GoogleTestAddTests.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Internal/CMakeCUDAFindToolkit.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Internal/CMakeCUDAFindToolkit.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Internal/CMakeTryCompilerOrLinkerFlag.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Internal/CMakeTryCompilerOrLinkerFlag.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Internal/CPack/CPackDeb.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Internal/CPack/CPackDeb.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/AIX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/AIX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/AppleClang.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/AppleClang.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/GNU.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/GNU.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/MSVC.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/MSVC.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/Solaris.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Linker/Solaris.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/AIX-XL-C.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/AIX-XL-C.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/AIX-XL-CXX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/AIX-XL-CXX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/Apple-XL-C.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/Apple-XL-C.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/Apple-XL-CXX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/Apple-XL-CXX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-dynamic-XL-C.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-dynamic-XL-C.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-dynamic-XL-CXX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-dynamic-XL-CXX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-static-XL-C.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-static-XL-C.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-static-XL-CXX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneP-static-XL-CXX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-dynamic-XL-C.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-dynamic-XL-C.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-dynamic-XL-CXX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-dynamic-XL-CXX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-static-XL-C.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-static-XL-C.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-static-XL-CXX.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/BlueGeneQ-static-XL-CXX.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/ProcessorCount.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/ProcessorCount.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/SquishTestScript.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/SquishTestScript.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/UseJava.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/UseJava.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/UseSWIG.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/UseSWIG.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/WriteCompilerDetectionHeader.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cmake-4.2.1-windows-x86_64/share/cmake-4.2/Modules/WriteCompilerDetectionHeader.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/DriverEnums.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/DriverEnums.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/platforms/OpenGLPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/platforms/OpenGLPlatform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/platforms/PlatformEGL.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/platforms/PlatformEGL.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/platforms/PlatformMetal.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/backend/platforms/PlatformMetal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filamat/MaterialBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filamat/MaterialBuilder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/BufferObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/BufferObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/IndexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/IndexBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/IndirectLight.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/IndirectLight.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/InstanceBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/InstanceBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/LightManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/LightManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/Material.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/Material.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/MorphTargetBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/MorphTargetBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/RenderableManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/RenderableManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/SkinningBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/SkinningBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/Stream.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/Stream.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/Texture.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/TransformManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/TransformManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/VertexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/filament/VertexBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/gltfio/TextureProvider.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/gltfio/TextureProvider.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/math/TMatHelpers.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/math/TMatHelpers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/tsl/robin_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/tsl/robin_hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/utils/Panic.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/utils/Panic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/utils/Path.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/utils/Path.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/utils/Status.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/utils/Status.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/viewer/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/linux/filament/include/viewer/Settings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/DriverEnums.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/DriverEnums.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/platforms/OpenGLPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/platforms/OpenGLPlatform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/platforms/PlatformEGL.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/platforms/PlatformEGL.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/platforms/PlatformMetal.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/backend/platforms/PlatformMetal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filamat/MaterialBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filamat/MaterialBuilder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/BufferObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/BufferObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/IndexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/IndexBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/IndirectLight.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/IndirectLight.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/InstanceBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/InstanceBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/LightManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/LightManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/Material.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/Material.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/MorphTargetBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/MorphTargetBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/RenderableManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/RenderableManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/SkinningBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/SkinningBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/Stream.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/Stream.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/Texture.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/TransformManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/TransformManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/VertexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/filament/VertexBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/gltfio/TextureProvider.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/gltfio/TextureProvider.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/math/TMatHelpers.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/math/TMatHelpers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/tsl/robin_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/tsl/robin_hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/utils/Panic.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/utils/Panic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/utils/Path.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/utils/Path.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/utils/Status.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/utils/Status.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/viewer/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/macOS/filament/include/viewer/Settings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/DriverEnums.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/DriverEnums.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/platforms/OpenGLPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/platforms/OpenGLPlatform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/platforms/PlatformEGL.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/platforms/PlatformEGL.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/platforms/PlatformMetal.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/backend/platforms/PlatformMetal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filamat/MaterialBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filamat/MaterialBuilder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/BufferObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/BufferObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/IndexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/IndexBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/IndirectLight.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/IndirectLight.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/InstanceBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/InstanceBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/LightManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/LightManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/Material.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/Material.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/MorphTargetBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/MorphTargetBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/RenderableManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/RenderableManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/SkinningBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/SkinningBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/Stream.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/Stream.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/Texture.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/TransformManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/TransformManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/VertexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/filament/VertexBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/gltfio/TextureProvider.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/gltfio/TextureProvider.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/math/TMatHelpers.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/math/TMatHelpers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/tsl/robin_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/tsl/robin_hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/utils/Panic.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/utils/Panic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/utils/Path.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/utils/Path.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/utils/Status.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/utils/Status.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/viewer/Settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filament-platform/win32/filament/include/viewer/Settings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcpkg.json" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,6 +89,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Application/interface/widgets/widget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/interface/widgets/widget.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/render/light/light.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/render/light/light.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/render/physics/physics.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/render/physics/physics.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="IjvwAvam" />
@@ -287,15 +139,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Application/core" />
+      <recent name="$PROJECT_DIR$/Application/programme-language/typescript/resolver" />
+      <recent name="$PROJECT_DIR$/Application/render/physics" />
+      <recent name="$PROJECT_DIR$/Application/render/light" />
       <recent name="$PROJECT_DIR$/Application/core/packages/rbxl" />
-      <recent name="$PROJECT_DIR$/Application/core/packages/rbxl/rbxfiles/binary" />
-      <recent name="$PROJECT_DIR$/Application/interface/widgets" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -311,7 +165,8 @@
       <updated>1772257536163</updated>
       <workItem from="1772257537194" duration="4625000" />
       <workItem from="1772280393264" duration="1470000" />
-      <workItem from="1772282006695" duration="4440000" />
+      <workItem from="1772282006695" duration="9845000" />
+      <workItem from="1772338267830" duration="9747000" />
     </task>
     <servers />
   </component>

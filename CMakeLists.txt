@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
 
-set(VCPKG_APPLOCAL_DEPS ON)
-set(VCPKG_APPLOCAL_DEPS_INSTALL ON)
 set(CMAKE_MACOSX_RPATH ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
@@ -20,6 +18,13 @@ if(PLATFORM STREQUAL "macos")
 else()
     project(rbxmk-studio LANGUAGES CXX)
 endif()
+
+if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING "" FORCE)
+endif()
+
+set(VCPKG_APPLOCAL_DEPS ON)
+set(VCPKG_APPLOCAL_DEPS_INSTALL ON)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -141,18 +146,45 @@ target_link_libraries(filament_all INTERFACE ${FILAMENT_IMPORTED_TARGETS})
 
 set(APP_NAME "rbxmk-studio")
 
+set(SOURCES
+        # core
+        Application/core/sources/boot.cpp
+        Application/core/sources/modules/interface.cpp
+        Application/core/sources/modules/phases.cpp
+        Application/core/file/file.cpp
+        Application/core/file/binary/BinaryFormat.cpp
+        Application/core/file/xml/XmlFormat.cpp
+        Application/core/filamentclasses/filamentclasses.cpp
+        Application/core/qtclasses/qtclasses.cpp
+
+        # interface
+        Application/interface/widgets/widget.cpp
+
+        # programme-language
+        Application/programme-language/main.cpp
+        Application/programme-language/luau/luau.cpp
+        Application/programme-language/luau/command-line/command-line.cpp
+        Application/programme-language/luau/logic/logic.cpp
+        Application/programme-language/typescript/typescript.cpp
+        Application/programme-language/typescript/resolver/resolver.cpp
+
+        # ram
+        Application/ram/main.cpp
+        Application/ram/optimization/optimization.cpp
+
+        # render
+        Application/render/main.cpp
+        Application/render/3d/3d.cpp
+        Application/render/3d/sub/file3d.cpp
+        Application/render/cam/cam.cpp
+        Application/render/cam/player/playercam.cpp
+        Application/render/cam/studio/studiocam.cpp
+        Application/render/light/light.cpp
+        Application/render/physics/physics.cpp
+)
+
 if(PLATFORM STREQUAL "macos")
     message(STATUS "Configuring for macOS bundle")
-
-    set(SOURCES
-            Application/core/sources/boot.cpp
-            Application/core/sources/modules/interface.cpp
-            Application/core/sources/modules/phases.cpp
-            Application/interface/widgets/widget.cpp
-            Application/core/packages/file/file.cpp
-            Application/core/packages/file/binary/BinaryFormat.cpp
-            Application/core/packages/luautypes/luautypes.cpp
-    )
 
     set(MACOS_ICON "${CMAKE_SOURCE_DIR}/assets/macos/icon.icns")
     set(MACOSX_BUNDLE_ICON_FILE "icon.icns")
@@ -211,28 +243,12 @@ if(PLATFORM STREQUAL "macos")
 elseif(PLATFORM STREQUAL "windows")
     message(STATUS "Configuring for Windows executable")
 
-    set(SOURCES
-            Application/core/sources/boot.cpp
-            Application/core/sources/modules/interface.cpp
-            Application/core/sources/modules/phases.cpp
-            Application/interface/widgets/widget.cpp
-            Application/core/packages/file/file.cpp
-            Application/core/packages/file/binary/BinaryFormat.cpp
-            Application/core/packages/luautypes/luautypes.cpp
-    )
-
     set(LUNE_BIN "${CMAKE_SOURCE_DIR}/StableFrameworks/platform-lune/windows/lune.exe")
     set(WIN_ICON_RC "${CMAKE_SOURCE_DIR}/assets/windows/app.rc")
 
     add_executable(${APP_NAME} WIN32
             ${SOURCES}
             ${WIN_ICON_RC}
-    )
-
-    add_custom_command(TARGET ${APP_NAME} POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E copy_directory
-            "${RBXFILES_DIR}"
-            "$<TARGET_BUNDLE_CONTENT_DIR:${APP_NAME}>/Resources/Roblox-File-Format"
     )
 
     file(GLOB LUA_SCRIPTS
@@ -256,18 +272,12 @@ elseif(PLATFORM STREQUAL "windows")
             lz4::lz4
     )
 
+    install(TARGETS ${APP_NAME}
+            RUNTIME DESTINATION .
+    )
+
 elseif(PLATFORM STREQUAL "linux")
     message(STATUS "Configuring for Linux build")
-
-    set(SOURCES
-            Application/core/sources/boot.cpp
-            Application/core/sources/modules/interface.cpp
-            Application/core/sources/modules/phases.cpp
-            Application/interface/widgets/widget.cpp
-            Application/core/packages/file/file.cpp
-            Application/core/packages/file/binary/BinaryFormat.cpp
-            Application/core/packages/luautypes/luautypes.cpp
-    )
 
     add_executable(${APP_NAME}
             ${SOURCES}
@@ -298,6 +308,6 @@ elseif(PLATFORM STREQUAL "linux")
     target_link_options(${APP_NAME} PRIVATE "-Wl,--end-group")
 
     install(TARGETS ${APP_NAME}
-            RUNTIME DESTINATION usr/bin
+            RUNTIME DESTINATION bin
     )
 endif()

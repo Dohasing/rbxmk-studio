@@ -8,6 +8,35 @@
   </a>
 </p>
 
-<p align="center">The best alternative to Roblox Studio based on rbxmk and writen in C++.</p>
+<p align="center">The best alternative to Roblox Studio based on CMake and writen in C++ programme language.</p>
+
+> [!WARNING]
+>  its a pre-build version of the rbxmk-studio project. the base of this project must be soon in 2027. its not a just project, its alternative of the Roblox Studio writen in C++.
+
+## filament render features
+
+### about filament
+
+filament the biggest project by google, this project is using for projects where are needing render better than in roblox engine.
+
+## questions about this project
+
+### this project something like that associated with Roblox Corporation ?
+
+No, this project by Neemaxon's rbxmk-studio developer group. its open-source project and not something like that with Roblox Corporation.
+
+### what motivates me ?
+
+this project will be not just basic Roblox Studio instrument - this project will be the biggest and its can will be parse .rbxl and .rbxlx files from the original Roblox Studio.
+
+### what platforms support this project ?
+
+this project supports all popular platforms, becouse the rbxmk-studio project builded in CMake and C++. this project will be supports macOS, windows and linux.
+
+### whats plugins & instruments will be support in the rbxmk-studio project from the original Roblox Studio ?
+
+this rbxmk-studio project will be supports almost all instruments & plugins from the original Roblox Studio, becouse in this project will be supports programme languages such as TypeScript (almost how roblox-ts) and luau (almost how from original roblox studio).
 
 I ❤️ Open Source
+
+Copyrights: zero, becouse this project writen in Qt 6, C++ programme language and CMake for stable, also this project support Filament by google. btw dependencies for this project not subsisten, becouse its writen in C++.
