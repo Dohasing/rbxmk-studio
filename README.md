@@ -13,7 +13,7 @@
 > [!WARNING]
 >  its a pre-build version of the rbxmk-studio project. the base of this project must be soon in 2027. its not a just project, its alternative of the Roblox Studio writen in C++.
 
-# what is motivate me ?
+# what motivates me ?
 
 this project will be not just basic Roblox Studio instrument - this project will be the biggest and its can will be parse .rbxl and .rbxlx files from the original Roblox Studio.
 
