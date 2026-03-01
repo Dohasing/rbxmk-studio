@@ -23,7 +23,7 @@ this project supports all popular platforms, becouse the rbxmk-studio project bu
 
 # whats plugins & instruments will be support in the rbxmk-studio project from the original Roblox Studio ?
 
-this the rbxmk-studio project will be support almost all instruments & plugins from the original Roblox Studio, becouse in this project will be supports programme languages such as TypeScript (almost how roblox-ts) and luau (almost how from original roblox studio).
+this rbxmk-studio project will be supports almost all instruments & plugins from the original Roblox Studio, becouse in this project will be supports programme languages such as TypeScript (almost how roblox-ts) and luau (almost how from original roblox studio).
 
 # I ❤️ Open Source
 
