@@ -26,55 +26,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd72daa-2bcd-4874-a4ed-dcc074c85c44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Application/core/file/xml/XmlFormat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/file/xml/XmlFormat.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/qtclasses/qtclasses.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/core/qtclasses/qtclasses.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/command-line/command-line.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/command-line/command-line.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/logic/logic.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/logic/logic.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/luau.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/luau/luau.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/main.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/typescript.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/programme-language/typescript/typescript.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/ram/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/ram/main.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/ram/optimization/optimization.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/ram/optimization/optimization.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/3d/3d.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/3d/3d.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/3d/sub/file3d.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/3d/sub/file3d.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/cam/cam.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/cam/cam.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/cam/player/playercam.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/cam/player/playercam.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/cam/studio/studiocam.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/cam/studio/studiocam.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/light/light.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/light/light.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/main.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/physics/physics.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/render/physics/physics.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/binary/BinaryFormat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/binary/BinaryFormat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/binary/BinaryFormat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/binary/BinaryFormat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/file.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/file.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/packages/file/file.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/file/file.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/packages/luautypes/luautypes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/filamentclasses/filamentclasses.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/packages/luautypes/luautypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application/core/filamentclasses/filamentclasses.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/core/packages/scripts/luau/_rbxmkscript-rbxl-parser.luau" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="6bd72daa-2bcd-4874-a4ed-dcc074c85c44" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,8 +41,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Application/interface/widgets/widget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/interface/widgets/widget.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/programme-language/typescript/resolver/resolver.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/render/light/light.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/render/light/light.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/render/physics/physics.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -147,9 +99,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -167,6 +119,7 @@
       <workItem from="1772280393264" duration="1470000" />
       <workItem from="1772282006695" duration="9845000" />
       <workItem from="1772338267830" duration="9747000" />
+      <workItem from="1772350080820" duration="8000" />
     </task>
     <servers />
   </component>
