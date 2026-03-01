@@ -13,18 +13,41 @@
 > [!WARNING]
 >  its a pre-build version of the rbxmk-studio project. the base of this project must be soon in 2027. its not a just project, its alternative of the Roblox Studio writen in C++.
 
-# what motivates me ?
+## filament render features
+
+### about filament
+
+filament the biggest project by google, this project is using for projects where are needing render better than in roblox engine.
+
+### examples of filament render: 
+
+![Night scene](docs/images/samples/example_bistro1.jpg)
+![Night scene](docs/images/samples/example_bistro2.jpg)
+![Materials](docs/images/samples/example_materials1.jpg)
+![Materials](docs/images/samples/example_materials2.jpg)
+![Helmet](docs/images/samples/example_helmet.jpg)
+![Screen-space refraction](docs/images/samples/example_ssr.jpg)
+
+All photos for the time being by Google.
+
+## questions about this project
+
+### this project something like that associated with Roblox Corporation ?
+
+No, this project by Neemaxon's rbxmk-studio developer group. its open-source project and not something like that with Roblox Corporation.
+
+### what motivates me ?
 
 this project will be not just basic Roblox Studio instrument - this project will be the biggest and its can will be parse .rbxl and .rbxlx files from the original Roblox Studio.
 
-# what platforms support this project ?
+### what platforms support this project ?
 
 this project supports all popular platforms, becouse the rbxmk-studio project builded in CMake and C++. this project will be supports macOS, windows and linux.
 
-# whats plugins & instruments will be support in the rbxmk-studio project from the original Roblox Studio ?
+### whats plugins & instruments will be support in the rbxmk-studio project from the original Roblox Studio ?
 
 this rbxmk-studio project will be supports almost all instruments & plugins from the original Roblox Studio, becouse in this project will be supports programme languages such as TypeScript (almost how roblox-ts) and luau (almost how from original roblox studio).
 
-# I ❤️ Open Source
+ I ❤️ Open Source
 
 Copyrights: zero, becouse this project writen in Qt 6, C++ programme language and CMake for stable, also this project support Filament by google. btw dependencies for this project not subsisten, becouse its writen in C++.
