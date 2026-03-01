@@ -19,17 +19,6 @@
 
 filament the biggest project by google, this project is using for projects where are needing render better than in roblox engine.
 
-### examples of filament render: 
-
-![Night scene](docs/images/samples/example_bistro1.jpg)
-![Night scene](docs/images/samples/example_bistro2.jpg)
-![Materials](docs/images/samples/example_materials1.jpg)
-![Materials](docs/images/samples/example_materials2.jpg)
-![Helmet](docs/images/samples/example_helmet.jpg)
-![Screen-space refraction](docs/images/samples/example_ssr.jpg)
-
-All photos for the time being by Google.
-
 ## questions about this project
 
 ### this project something like that associated with Roblox Corporation ?
